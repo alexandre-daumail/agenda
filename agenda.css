@@ -42,3 +42,5 @@ header .next {
 .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
 
 .tftable tr:hover {background-color:#ffffff;}
+
+.tftable .midi {background-color:rgb(245, 12, 12);}

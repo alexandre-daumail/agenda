@@ -8,12 +8,18 @@
   </head>
 
   <body>
-    <form action="action_page.php">
+    <form action="agenda.html">
       <label for="titre">Titre</label>
       <input type="text" id="titre" name="titre" placeholder="Evènement, tâche,...">
   
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+
+      <label for="heure">Heure début</label>
+      <input type="time" id="start" name="start">
+
+      <label for="heure">Heure fin</label>
+      <input type="time" id="end" name="end">
   
       <label for="Catégorie">Catégorie</label>
       <select id="cat" name="cat">
@@ -27,6 +33,6 @@
       <label for="Description">Description</label>
       <textarea id="description" name="description" placeholder="Ecrivez quelque chose..." style="height:200px"></textarea>
   
-      <input type="submit" value="Submit">
+      <input type="submit" value="Valider">
   </body>
 </html>

@@ -1,5 +1,5 @@
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif; width: 100%;}
+body {font-family: Verdana, sans-serif; width: auto; background-color: rgb(247, 209, 177);}
 
 /* en-tête de la semaine */
 header {
@@ -33,7 +33,7 @@ header .next {
   padding-top: 10px;
 }
 
-.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: separate;height: 800px;}
 
 .tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
 
@@ -43,4 +43,76 @@ header .next {
 
 .tftable tr:hover {background-color:#ffffff;}
 
-.tftable .midi {background-color:rgb(245, 12, 12);}
+.tftable .midi {background-color:rgb(141, 255, 137);}
+
+.btn-container{ display: flex; justify-content: center; align-items: center;width: 100%;
+}
+
+/*bouton formulaire*/
+
+.button {
+  background-color: #1c87c9;
+  box-shadow: 0 5px 0 #105cad;
+  color: white;
+ padding: 0.7em 0.7em;
+ text-decoration: none;
+ width: auto;
+}
+
+/*Style du formulaire*/
+
+input[type=time], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=date], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

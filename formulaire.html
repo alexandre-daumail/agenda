@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Formulaire</title>
-  <link rel="stylesheet" href="agenda.css">
-</head>
-<body>
-  ...
-  <!-- Le reste du contenu -->
-  ...
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agenda.css">
+  </head>
+
+  <body>
+    <form action="agenda.html">
+      <label for="titre">Titre</label>
+      <input type="text" id="titre" name="titre" placeholder="Evènement, tâche,...">
+  
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+
+      <label for="heure">Heure début</label>
+      <input type="time" id="start" name="start">
+
+      <label for="heure">Heure fin</label>
+      <input type="time" id="end" name="end">
+  
+      <label for="Catégorie">Catégorie</label>
+      <select id="cat" name="cat">
+        <option value="event">Evènement</option>
+        <option value="abs">Absence</option>
+        <option value="obj">Objectif</option>
+        <option value="rappel">Rappel</option>
+        <option value="tache">Tâche</option>
+      </select>
+  
+      <label for="Description">Description</label>
+      <textarea id="description" name="description" placeholder="Ecrivez quelque chose..." style="height:200px"></textarea>
+  
+      <input type="submit" value="Valider">
+  </body>
 </html>

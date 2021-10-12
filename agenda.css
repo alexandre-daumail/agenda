@@ -52,11 +52,11 @@ header .next {
 
 .button {
   background-color: #1c87c9;
-  box-shadow: 0 5px 0 #105cad;
+  margin: 25px;
   color: white;
- padding: 0.7em 0.7em;
- text-decoration: none;
- width: auto;
+  padding: 0.7em 0.7em;
+  text-decoration: none;
+  width: auto;
 }
 
 /*Style du formulaire*/
@@ -115,4 +115,8 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.event {
+  background-color: rgb(255, 53, 53);
 }
